@@ -11,8 +11,8 @@ A small Windows desktop app for downloading YouTube videos or extracting audio. 
 
 ## Requirements
 
-- **Windows 10 or later** (the provided build is a Windows GUI `.exe`).  
-- **FFmpeg** — required for:
+- **Windows 10 or later** (the provided build is a `.exe`).  
+- **FFmpeg** - required for:
 - merging separate video + audio into **MP4** or **WebM**  
 - **MP3** / **WAV** extraction  
 
