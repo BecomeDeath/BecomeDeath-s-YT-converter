@@ -1,5 +1,4 @@
 <img width="551" height="739" alt="saves" src="https://github.com/user-attachments/assets/288b3ee9-9173-48e5-bd3b-93b99978a5bd" />
-# BecomeDeath's YT-Converter
 
 A small Windows desktop app for downloading YouTube videos or extracting audio. It runs **locally** on your PC using [yt-dlp](https://github.com/yt-dlp/yt-dlp) and optional [FFmpeg](https://ffmpeg.org/) for merging and audio conversion.
 
