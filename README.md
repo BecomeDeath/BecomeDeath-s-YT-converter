@@ -11,30 +11,7 @@ A small Windows desktop app for downloading YouTube videos or extracting audio. 
 
 ## Requirements
 
-- **Windows 10 or later** (the provided build is a `.exe`).  
-- **FFmpeg** - required for:
-- merging separate video + audio into **MP4** or **WebM**  
-- **MP3** / **WAV** extraction  
-
-If FFmpeg is missing, the app will warn you and those modes will not work until FFmpeg is available.
-
-### Where FFmpeg is looked for
-
-1. **`YOUTUBEGRAB_FFMPEG`** environment variable — path to `ffmpeg.exe` or to a folder that contains it (or `bin\ffmpeg.exe`).  
-2. **`ffmpeg` on your PATH**  
-3. **`ffmpeg.exe` next to the application** (same folder as the `.exe`)  
-4. Under a folder named like **`ffmpeg-*`** next to the app, with `bin\ffmpeg.exe` inside (typical full build layout).
-
-## Running from source
-
-1. Install [Python 3.11+](https://www.python.org/downloads/) (check “Add Python to PATH” on Windows).  
-2. In this folder:
-
-   ```text
-   pip install -r requirements.txt
-   python make_icon.py
-   python main.py
-   ```
+- **Windows 10 or later** (the provided build is a `.exe`). 
 
 ## Building the standalone `.exe`
 
@@ -42,11 +19,13 @@ If FFmpeg is missing, the app will warn you and those modes will not work until 
 2. Run **`build_exe.bat`**. It installs dependencies, generates **`app_icon.ico`** / **`app_icon.png`**, and runs PyInstaller.  
 3. Output: **`dist\BecomeDeathsYTConverter.exe`**
 
+(Standalone build is not available at this moment, will be released soon.)
+
 If the taskbar or Explorer icon looks stale after a rebuild, rename the `.exe` once or sign out and back in; Windows caches icons aggressively.
 
 ## Usage
 
-1. Paste a **YouTube** URL.  
+1. Paste **Any** URL.  (Works as long as it has a valid URL link, YouTube, Twitter, Instagram, Bilibili, soundcloud, etc.)
 2. Choose **output folder** (defaults to your Downloads folder).  
 3. Pick **format** (MP4 / WebM / MP3 / WAV) and **quality**.  
 4. Click **Download** and watch the status line and activity log.
